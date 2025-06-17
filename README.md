@@ -68,14 +68,14 @@ Implement the following endpoints in `app/routers/todos.py`:
 - Response: `201 Created` with created todo
 - Validation: title is required and non-empty
 
-#### PUT /todos/{}
+#### PUT /todos/{todo_id}
 
 - Updates an existing todo
 - Request body: `{"title": "Updated title", "completed": true}` (both fields optional)
 - Response: `200 OK` with updated todo
 - Response: `404 Not Found` if todo doesn't exist
 
-#### DELETE /todos/
+#### DELETE /todos/{todo_id}
 
 - Deletes a todo
 - Response: `204 No Content` on success
