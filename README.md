@@ -68,7 +68,7 @@ Implement the following endpoints in `app/routers/todos.py`:
 - Response: `201 Created` with created todo
 - Validation: title is required and non-empty
 
-#### PUT /todos/
+#### PUT /todos/{}
 
 - Updates an existing todo
 - Request body: `{"title": "Updated title", "completed": true}` (both fields optional)
