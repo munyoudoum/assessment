@@ -2,7 +2,7 @@
 
 ## Overview
 
-This assessment evaluates your ability to build a RESTful API using FastAPI. You'll be creating a todo management system that demonstrates your understanding of:
+This assessment evaluates your ability to build a RESTful API using FastAPI. You'll be creating the backend for a todo management system. Ideally this back end could be used by [front end coding assessment](https://github.com/topschool-ai/fe-coding-assessment). This assessment should cover:
 
 - FastAPI application structure
 - Pydantic models for data validation
@@ -36,7 +36,7 @@ The API will be available at `http://localhost:8000`
 
 You need to implement a complete CRUD API for managing todos. The API should handle the following operations:
 
-### ✅ Task 1: Data Models
+### Task 1: Data Models
 
 Create Pydantic models in `app/models.py`:
 
@@ -44,7 +44,7 @@ Create Pydantic models in `app/models.py`:
 - **Request models** for creating and updating todos
 - **Response models** for API responses
 
-### ✅ Task 2: In-Memory Database
+### Task 2: In-Memory Database
 
 Implement basic data storage in `app/database.py`, you can implement this in any way you like:
 
@@ -52,7 +52,7 @@ Implement basic data storage in `app/database.py`, you can implement this in any
 - Provide functions for CRUD operations
 - Handle ID generation for new todos
 
-### ✅ Task 3: API Endpoints
+### Task 3: API Endpoints
 
 Implement the following endpoints in `app/routers/todos.py`:
 
@@ -81,14 +81,14 @@ Implement the following endpoints in `app/routers/todos.py`:
 - Response: `204 No Content` on success
 - Response: `404 Not Found` if todo doesn't exist
 
-### ✅ Task 4: FastAPI Application Setup
+### Task 4: FastAPI Application Setup
 
 Configure the main FastAPI app in `app/main.py`:
 
 - Include the todos router
 - Add basic error handling
 
-### ✅ Task 5: Error Handling
+### Task 5: Error Handling
 
 Implement proper error responses:
 
@@ -168,6 +168,8 @@ Response: 204 No Content
 ```
 
 ## Helpful Resources
+
+These are some helpful resources to use if you're not entirely familiar.
 
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
 - [Pydantic Documentation](https://docs.pydantic.dev/)
