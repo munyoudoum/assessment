@@ -1,10 +1,10 @@
-# 🧪 Coding Assessment – TODO App (Next.js + FastAPI) for Full Stack
+# Coding Assessment – TODO App (Next.js + FastAPI) for Full Stack
 
 Welcome! This coding challenge assesses your ability to build and connect a full-stack TODO application using **Next.js** for the frontend and **FastAPI** for the backend.
 
 ---
 
-## 🧠 Objective
+## Objective
 
 Build a complete TODO application with CRUD features:
 
@@ -13,7 +13,7 @@ Build a complete TODO application with CRUD features:
 
 ---
 
-## 🔧 Requirements
+## Requirements
 
 Please check:
 
@@ -22,13 +22,13 @@ Please check:
 
 ---
 
-## 📬 Submission
+## Submission
 
 Please submit:
 
 - A **GitHub** repository link
 
-✅ Make sure:
+Make sure:
 
 - All features are working
 - FastAPI and Next.js run independently but connect correctly
