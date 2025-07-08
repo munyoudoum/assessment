@@ -1,8 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-# TODO: Import your todos router here
-# from app.routers import todos
+from app.routers import todos
 
 # Create FastAPI instance
 app = FastAPI(
@@ -20,9 +19,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# TODO: Include your todos router
-# app.include_router(todos.router, prefix="/todos", tags=["todos"])
-
+# Include the todos router
+app.include_router(todos.router, prefix="/todos", tags=["todos"])
 
 @app.get("/")
 async def root():
