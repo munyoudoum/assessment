@@ -362,29 +362,16 @@ export default function TodoApp() {
             {/* Footer stats */}
             {!loading && todos.length > 0 && (
               <div className="px-4 sm:px-8 py-4 sm:py-6 bg-gradient-to-r from-gray-50 to-indigo-50 border-t border-gray-100">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-0">
-                  <div className="flex flex-wrap items-center gap-3 sm:gap-6 text-sm">
-                    <span className="text-gray-600 font-medium">
-                      <span className="text-indigo-600 font-bold">{todos.filter(todo => !todo.completed).length}</span> remaining
-                    </span>
-                    <span className="text-gray-600 font-medium">
-                      <span className="text-green-600 font-bold">{completedCount}</span> completed
-                    </span>
-                    <span className="text-gray-600 font-medium">
-                      <span className="text-purple-600 font-bold">{totalCount}</span> total
-                    </span>
-                  </div>
-                  {completedCount > 0 && (
-                    <button
-                      onClick={() => {
-                        const completedTodos = todos.filter(todo => todo.completed);
-                        completedTodos.forEach(todo => deleteTodo(todo.id));
-                      }}
-                      className="text-red-600 hover:text-red-800 font-medium hover:bg-red-50 px-3 py-1.5 sm:py-1 rounded-lg transition-colors duration-200 text-sm w-full sm:w-auto text-center"
-                    >
-                      Clear completed
-                    </button>
-                  )}
+                <div className="flex flex-wrap items-center gap-3 sm:gap-6 text-sm justify-center">
+                  <span className="text-gray-600 font-medium">
+                    <span className="text-indigo-600 font-bold">{todos.filter(todo => !todo.completed).length}</span> remaining
+                  </span>
+                  <span className="text-gray-600 font-medium">
+                    <span className="text-green-600 font-bold">{completedCount}</span> completed
+                  </span>
+                  <span className="text-gray-600 font-medium">
+                    <span className="text-purple-600 font-bold">{totalCount}</span> total
+                  </span>
                 </div>
               </div>
             )}
